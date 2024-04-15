@@ -1,0 +1,43 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background: var(--teal-100);
+  color: var(--orange-300);
+
+  margin-bottom: 2rem;
+
+  ul {
+    font-size: 25px;
+    display: flex;
+    list-style: none;
+    column-gap: 5rem;
+    margin-right: 5rem;
+
+    li {
+      a {
+        text-decoration: none;
+        color: var(--light-font);
+        transition: all 0.2s ease;
+
+        &:hover {
+          color: var(--orange-100);
+        }
+
+        &:active,
+        &.active {
+          color: var(--orange-500);
+        }
+      }
+    }
+  }
+}
+.navbar ul li {
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.navbar ul li:active {
+  color: var(--light-font);
+}
